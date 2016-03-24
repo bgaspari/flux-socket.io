@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "generators": true
+    }
+  },
+  "rules": {
+    // Validate closing bracket location in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
+    "react/jsx-closing-bracket-location": [2, "after-props"],
+    // Limit maximum of props on a single line in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
+    "react/jsx-max-props-per-line": [0, { "maximum": 2 }],
+    // Prevent usage of .bind() and arrow functions in JSX props
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
+    "react/jsx-no-bind": [2, {"allowArrowFunctions": true}],
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
+    "react/no-direct-mutation-state": 2,
+    // Prevent multiple component definition per file
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
+    "react/no-multi-comp": 0,
+    "no-trailing-spaces": 0,
+    "max-len": 0,
+    "no-param-reassign": 0,
+    "no-shadow": 0,
+    "no-loop-func": 0,
+    "eqeqeq": [2, "smart"]
+  }
+}
